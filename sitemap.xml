@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.emanholdings.com.au/</loc></url>
+  <url><loc>https://www.emanholdings.com.au/commercial.html</loc></url>
+  <url><loc>https://www.emanholdings.com.au/residential.html</loc></url>
+  <url><loc>https://www.emanholdings.com.au/battery-storage.html</loc></url>
+  <url><loc>https://www.emanholdings.com.au/ev-charging.html</loc></url>
   <url><loc>https://www.emanholdings.com.au/about.html</loc></url>
-  <url><loc>https://www.emanholdings.com.au/services.html</loc></url>
-  <url><loc>https://www.emanholdings.com.au/projects.html</loc></url>
   <url><loc>https://www.emanholdings.com.au/contact.html</loc></url>
 </urlset>

@@ -71,11 +71,16 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       // No backend is wired up yet — fall back to opening the user's email client.
-      var subject = encodeURIComponent('Website enquiry from ' + name);
-      var body = encodeURIComponent(message + '\n\n' + name + '\n' + email + '\n' + (form.querySelector('#phone') ? form.querySelector('#phone').value : ''));
-      window.location.href = 'mailto:info@emanholdings.com.au?subject=' + subject + '&body=' + body;
+      var propertyType = form.querySelector('#propertyType') ? form.querySelector('#propertyType').value : '';
+      var phone = form.querySelector('#phone') ? form.querySelector('#phone').value : '';
+      var subject = encodeURIComponent('Energy assessment request from ' + name + (propertyType ? ' (' + propertyType + ')' : ''));
+      var bodyLines = [message, '', 'Name: ' + name, 'Email: ' + email];
+      if (phone) bodyLines.push('Phone: ' + phone);
+      if (propertyType) bodyLines.push('Property type: ' + propertyType);
+      var body = encodeURIComponent(bodyLines.join('\n'));
+      window.location.href = 'mailto:' + BRAND.email + '?subject=' + subject + '&body=' + body;
 
-      status.textContent = 'Opening your email client to send this enquiry...';
+      status.textContent = 'Opening your email client to send this through...';
       status.className = 'success';
     });
   }
