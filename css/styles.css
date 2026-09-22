@@ -177,7 +177,7 @@ p { color: var(--color-text-muted); }
   color: var(--color-primary);
   flex-shrink: 0;
 }
-.logo .mark { width: 36px; height: 36px; flex-shrink: 0; }
+.logo .mark { height: 34px; width: auto; flex-shrink: 0; border-radius: 6px; }
 
 .nav-links {
   display: flex;
@@ -237,6 +237,7 @@ p { color: var(--color-text-muted); }
   pointer-events: none;
 }
 .hero-inner { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; }
+.hero-logo { max-width: min(420px, 85%); width: 100%; height: auto; margin: 0 auto 32px; }
 .hero-brand {
   display: block;
   font-family: var(--font-heading);

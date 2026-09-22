@@ -13,16 +13,13 @@ var NAV_ITEMS = [
   { href: 'contact.html', label: 'Book an Assessment', key: 'contact' }
 ];
 
-// Temporary Eman Holdings mark: a plain gold ring + spark on a black
-// badge. Deliberately simple — this gets swapped for the full Chartered
-// Energy emblem later, and the ring/spark motif is designed to carry
-// over so the eventual swap feels like an evolution, not a reset.
+// Eman Holdings icon mark (images/eman-holdings-icon.png), cropped from
+// the supplied logo artwork — same ring/starburst motif the future
+// Chartered Energy emblem uses, just wordmarked for now. To rebrand,
+// swap this file (and images/eman-holdings-logo.png, used on the Home
+// hero) for the new artwork; no HTML/CSS changes needed.
 function brandLogoMark() {
-  return '<svg class="mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">' +
-    '<rect width="48" height="48" rx="10" fill="var(--color-primary)"/>' +
-    '<circle cx="24" cy="24" r="11" fill="none" stroke="var(--color-gold)" stroke-width="2.25"/>' +
-    '<circle cx="24" cy="13.5" r="2" fill="var(--color-gold)"/>' +
-  '</svg>';
+  return '<img class="mark" src="images/eman-holdings-icon.png" alt="">';
 }
 
 function renderHeader(activeKey) {
