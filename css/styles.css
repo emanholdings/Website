@@ -446,6 +446,10 @@ p { color: var(--color-text-muted); }
   aspect-ratio: 3/4;
   border-radius: var(--radius);
   background: var(--color-bg-alt);
+  overflow: hidden;
+}
+.founder-photo img { width: 100%; height: 100%; object-fit: cover; }
+.founder-photo.placeholder {
   border: 1px dashed var(--color-border);
   display: flex;
   flex-direction: column;
@@ -456,8 +460,8 @@ p { color: var(--color-text-muted); }
   text-align: center;
   padding: 24px;
 }
-.founder-photo svg { width: 48px; height: 48px; opacity: 0.5; }
-.founder-photo span { font-size: 0.82rem; font-weight: 600; font-family: var(--font-heading); }
+.founder-photo.placeholder svg { width: 48px; height: 48px; opacity: 0.5; }
+.founder-photo.placeholder span { font-size: 0.82rem; font-weight: 600; font-family: var(--font-heading); }
 .founder-name { font-size: 1.4rem; margin-bottom: 2px; }
 .founder-title { color: var(--color-gold-dark); font-weight: 600; font-family: var(--font-heading); font-size: 0.9rem; margin-bottom: 18px; }
 .founder-bio p { margin-bottom: 16px; color: var(--color-text); }
