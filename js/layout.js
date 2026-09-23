@@ -69,6 +69,7 @@ function renderFooter() {
       '</div>' +
       '<div class="footer-bottom">' +
         '<span>&copy; <span id="year"></span> ' + BRAND.name + '. All rights reserved.</span>' +
+        '<span><a href="complaints.html">Complaints Procedure</a></span>' +
       '</div>' +
     '</div>'
   );
